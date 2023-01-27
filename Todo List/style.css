@@ -1,0 +1,166 @@
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+}
+#to-do-list {
+    width: 75%;
+    background-color:#3E6D9C;
+    box-shadow: 1px 1px 10px 10px lightgreen;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 6%;
+    display: block;
+}
+#to-do-wrapper {
+    width: 90%;
+    height: 100%;
+    padding-top: 2%;
+    padding-bottom: 5%;
+    margin: auto;
+}
+#list-view, #list-note {
+    width: 100%;
+}
+#list-view {
+    height: 70%;
+    flex-flow: row wrap;
+}
+#list-note {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#list-field {
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.note-line {
+    width: 150px;
+    padding: 10px;
+    background-color: #FD841F;
+    border-left: 5px solid #E14D2A;
+    margin: 10px;
+    word-wrap:break-word;
+}
+
+/* Windiw Opening */
+
+#noteWindow {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.733);
+    position: absolute;
+    top: 0;
+}
+
+#noteWindow-Wrapper {
+    width: 30%;
+    background-image: linear-gradient(to right, lightpink,lightgreen,lightskyblue);
+    box-shadow: 2px 2px 30px 10px slateblue;
+    border-radius: 25px;
+    margin: auto;
+    margin-top: 9%;
+}
+
+#note {
+    padding: 5%;
+    height: 95%;
+    display: flex;
+}
+
+#dateTime{
+    width: 50%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+#nodeTt {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#noteFull {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#noteFull > article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#fullNoteP {
+    font-size: 20px
+}
+
+#noteDay-input, #noteTime-input,
+#slefNoteTitle {
+    padding: 10px;
+    background-image: linear-gradient(to right, lightskyblue, lightpink);
+}
+
+#noteBgColor {width: 100%; }
+
+#todo-save, #todo-delete {
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 18px;
+    width: 15%;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 1px 1px 20px 2px gray;
+    transition: 0.5s;
+    font-weight: 700;
+}
+
+#todo-delete {
+    color: white;
+    background-color: #FD841F;
+}
+
+#todo-save:hover,
+#todo-delete:hover {
+    box-shadow: 1px 1px 15px 2px skyblue;
+    color: #3E6D9C;
+}
+
+#todo-delete:hover {
+    color: #E14D2A;
+}
+
+#selfNoteArea {
+    width: 100%;
+    height: 150px;
+}
+
+#notePageButton {
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 18px;
+    width: 50%;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 1px 1px 20px 2px gray;
+}
+
+#notePageButton:hover {
+    box-shadow: 1px 1px 15px 2px skyblue;
+}
+

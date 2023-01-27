@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Document</title>
+  
+</head>
+<body>
+    
+    <div id="to-do-list">
+        <div id="to-do-wrapper">
+            <h3 style="text-align: center; margin-top: 0;">Todo List</h3>
+            <div id="list-view">
+                <ul id="list-field">
+
+                </ul>
+            </div>
+            <div id="list-note">
+                <button id="todo-save" type="button" onclick="createNote('noteWindow')">
+                    Create Note
+                </button>
+                <button id="todo-delete" type="button" onclick="createDelete('noteWindow')">
+                    Delete Note
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <div id="noteWindow">
+        <div id="noteWindow-Wrapper">
+            <div id="note">
+                <div id="dateTime">
+                    <div id="noteDay-w">
+                        <h1 id="noteDay">Day</h4>
+                        <select id="noteDay-input">
+                            <option value="Monday">Monday</option>
+                            <option value="Tuesday">Tuesday</option>
+                            <option value="Wednesday">Wednesday</option>
+                            <option value="Thursday">Thursday</option>
+                            <option value="Friday">Friday</option>
+                            <option value="Saturday">Saturday</option>
+                            <option value="Sunday">Sunday</option>
+                        </select>
+                    </div>
+                    <div id="noteTime-w">
+                        <h2 id="noteTime">Time</h2>
+                        <input id="noteTime-input" type="time">
+                    </div>
+                    <div id="nt-w">
+                        <h2 id="noteTitle">Note Title</h4>
+                        <input type="text" id="slefNoteTitle">
+                    </div>
+                    <div id="bg-color">
+                        <h3 id="colorTitle">Note Background Color</h3>
+                        <input type="color" id="noteBgColor">
+                    </div>
+                    
+                </div>
+                <div id="noteFull">
+                    <article>
+                        <h2 id="fullNoteP">
+                            Daily Note
+                        </h2>
+                        <textarea id="selfNoteArea"></textarea>
+                        <button id="notePageButton" type="button" onclick="saveNote('list-field','noteWindow')">
+                            Save
+                        </button>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="deleteNoteWindow">
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script src="script.js">
+    </script>
+</body>
+</html>
